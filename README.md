@@ -1,8 +1,8 @@
 # Locker Distribution Pad (Abiotic Factor mod)
 
-Adds a craftable **Locker Distribution Pad**: a Distribution Pad that also sends items to the
-facility's pre-placed storage (lockers, filing cabinets, toolboxes, fridges, desks, crates...),
-not only containers you built.
+Makes the vanilla **Distribution Pad** also send items to the facility's pre-placed storage
+(lockers, filing cabinets, toolboxes, fridges, desks, crates...), not only containers you built.
+Like the vanilla pad, an item only goes to a container that already holds that item type.
 
 ## Why the vanilla pad skips them
 
@@ -20,7 +20,10 @@ so the vanilla pad ignores them.
 3. Skips player corpses, loot spill bags and trader storage (incl. the autosalvager).
 4. Adds the rest with the vanilla `AddContainer`.
 
-Same recipe, bench, unlock and look as the vanilla pad. Item row: `NUVNS_LockerDistPad`.
+`ItemTable_Craftables/distribution_pad` overrides the vanilla `distribution_pad` row so the
+normal recipe places this pad. Pads already placed in a save stay vanilla until picked up and
+placed again. The older standalone item (`NUVNS_LockerDistPad`) is kept, without a recipe, so
+pads from earlier test builds still pick up correctly.
 
 ## Project
 
