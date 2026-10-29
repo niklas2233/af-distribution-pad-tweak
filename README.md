@@ -22,8 +22,8 @@ so the vanilla pad ignores them.
 
 `ItemTable_Craftables/distribution_pad` overrides the vanilla `distribution_pad` row so the
 normal recipe places this pad. Pads already placed in a save stay vanilla until picked up and
-placed again. The older standalone item (`NUVNS_LockerDistPad`) is kept, without a recipe, so
-pads from earlier test builds still pick up correctly.
+placed again. The modded pad has no item row of its own, so it shows and picks up as the
+vanilla Distribution Pad.
 
 ## Project
 
